@@ -4,7 +4,7 @@ C# Coroutines in Godot game engine just like in Unity
 1. Add PeakyCoroutine.cs somewhere in your project
 
 2. Use like this...
-    ```
+    ```C#
     public override void _Ready()
     {
         Coroutine.Run(TestCoroutine(3f), this);
