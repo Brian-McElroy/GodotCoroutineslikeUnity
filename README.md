@@ -41,3 +41,5 @@ I wanted to replicate the following features..
 * Yield until next frame.
 * Yield for certain amount of time in seconds.
 * Yield another coroutine.
+
+This is the 1st thing I've made in Godot, I imagine I will improve this a lot as I learn more about Godot. Also please go ahead and make pull requests if you want to improve this.
