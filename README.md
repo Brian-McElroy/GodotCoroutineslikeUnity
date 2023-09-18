@@ -1,6 +1,8 @@
 # GodotCoroutineslikeUnity
 C# Coroutines in Godot game engine just like in Unity
 
+How to use.....
+
 1. Add PeakyCoroutine.cs somewhere in your project
 
 2. Use like this...
