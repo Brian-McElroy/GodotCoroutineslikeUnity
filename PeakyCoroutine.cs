@@ -36,8 +36,11 @@ namespace Peaky.Coroutines
     {
         public override async Task<int> Wait(Node runner)
         {
-            //await runner.ToSignal(runner.GetTree(), "process_frame"); // GODOT 4
-            await runner.ToSignal(runner.GetTree(), "idle_frame"); // GODOT 3
+#if GODOT4_OR_GREATER
+            await runner.ToSignal(runner.GetTree(), "process_frame"); 
+#elif            
+            await runner.ToSignal(runner.GetTree(), "idle_frame"); 
+#endif
             return 0;
         }
     }
